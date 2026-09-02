@@ -24,7 +24,9 @@ cd fedora-7.2.2-xwq-zen
 # Make the script executable and run it
 chmod +x build.sh
 ./build.sh
+```bash
 
+# MANUAL BUILDING
 ```bash
 # 1. Install dependencies
 sudo dnf groupinstall "Development Tools" "C Development Tools and Libraries" -y
