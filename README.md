@@ -28,23 +28,6 @@ A performance-optimized, low-latency Linux kernel build tailored for low-end har
 
 ---
 
-## Automated Build & Installation (Recommended)
-
-The fastest way to build and install the kernel is via the provided automated build script.
-
-### Quick Start
-
-```bash
-# Clone this repository
-git clone https://github.com/alibuzcuk/fedora-7.2.2-xwq-zen.git
-cd fedora-7.2.2-xwq-zen
-
-# Make the script executable
-chmod +x build.sh
-
-# Run the automated build
-./build.sh
-```
 
 ### What the Build Script Does
 
@@ -58,7 +41,7 @@ chmod +x build.sh
 
 ---
 
-## Manual Build Instructions
+## Build Instructions
 
 If you prefer step-by-step control or need to modify the build process, follow these instructions:
 
@@ -67,7 +50,7 @@ If you prefer step-by-step control or need to modify the build process, follow t
 ```bash
 sudo dnf groupinstall "Development Tools" "C Development Tools and Libraries" -y
 sudo dnf install ncurses-devel bison flex openssl-devel elfutils-libelf-devel bc pahole \
-  rpm-build fedora-packager rmtimer dnf-plugins-core git curl -y
+  rpm-build fedora-packager rmtimer dnf-plugins-core git curl pearl -y
 ```
 
 ### Step 2: Clone Zen Kernel Source
