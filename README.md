@@ -50,7 +50,7 @@ If you prefer step-by-step control or need to modify the build process, follow t
 ```bash
 sudo dnf groupinstall "Development Tools" "C Development Tools and Libraries" -y
 sudo dnf install ncurses-devel bison flex openssl-devel elfutils-libelf-devel bc pahole \
-  rpm-build fedora-packager rmtimer dnf-plugins-core git curl pearl -y
+  rpm-build fedora-packager rmtimer dnf-plugins-core git curl perl -y
 ```
 
 ### Step 2: Clone Zen Kernel Source
